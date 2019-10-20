@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lorem Stores</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="loremStores.css">
+</head>
+
+<body>
+
+    <nav>
+        <h1>Lorem Stores</h1>
+        <ul>
+            <li>
+                <i class="far fa-lightbulb"></i>
+                <a href="#" class="d-none d-md-inline">Products</a>
+            </li>
+            <li data-toggle="modal" data-target="#exampleModal">
+                <i class="fas fa-shopping-cart"></i>
+                <a href="#" class="d-none d-md-inline">Cart</a>
+            </li>
+            <li>
+                <i class="fas fa-user-friends"></i>
+                <a href="#" class="d-none d-md-inline">About us</a>
+            </li>
+        </ul>
+    </nav>
+
+    
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div id="contenido" class="modal-body">
+              <p>Not products yet</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" data-dismiss="modal">Close</button>
+              <button type="button" onclick="pay()">Pay</button>
+            </div>
+          </div>
+        </div>
+      </div>    
+
+
+    <main>
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="contenedor"  onclick="addtoCart('Lampara',100)">  
+                    <img src="img/lamp1.jpg" alt="producto">
+                    <div class="info">
+                        <h4>Lampara</h4>
+                        <p class="descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet repudiandae amet architecto et fugiat sunt omnis quam, libero doloremque aspernatur deserunt quidem beatae saepe voluptas aliquam nostrum ducimus laborum. Aut!</p>
+                        <p class="precio">100</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="contenedor"  onclick="addtoCart('Lamp',600)">
+                    <img src="img/lamp2.jpg" alt="producto">
+                    <div class="info">
+                        <h4>Lamp</h4>
+                        <p class="descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet repudiandae amet architecto et fugiat sunt omnis quam, libero doloremque aspernatur deserunt quidem beatae saepe voluptas aliquam nostrum ducimus laborum. Aut!</p>
+                        <p class="precio">600</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="contenedor"  onclick="addtoCart('Lampe',500)">
+                    <img src="img/lamp3.jpg" alt="producto">
+                    <div class="info">
+                        <h4>Lampe</h4>
+                        <p class="descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet repudiandae amet architecto et fugiat sunt omnis quam, libero doloremque aspernatur deserunt quidem beatae saepe voluptas aliquam nostrum ducimus laborum. Aut!</p>
+                        <p class="precio">500</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="contenedor"  onclick="addtoCart('Lamba',700)">
+                        <img src="img/lamp4.jpg" alt="producto">
+                        <div class="info">
+                            <h4>Lamba</h4>
+                            <p class="descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet repudiandae amet architecto et fugiat sunt omnis quam, libero doloremque aspernatur deserunt quidem beatae saepe voluptas aliquam nostrum ducimus laborum. Aut!</p>
+                            <p class="precio">700</p>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="contenedor"  onclick="addtoCart('Ranpu',800)">
+                        <img src="img/lamp5.jpg" alt="producto">
+                        <div class="info">
+                            <h4>Ranpu</h4>
+                            <p class="descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet repudiandae amet architecto et fugiat sunt omnis quam, libero doloremque aspernatur deserunt quidem beatae saepe voluptas aliquam nostrum ducimus laborum. Aut!</p>
+                            <p class="precio">800</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="contenedor"  onclick="addtoCart('Lamppu',200)">
+                        <img src="img/lamp6.jpg" alt="producto">
+                        <div class="info">
+                            <h4>Lamppu</h4>
+                            <p class="descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet repudiandae amet architecto et fugiat sunt omnis quam, libero doloremque aspernatur deserunt quidem beatae saepe voluptas aliquam nostrum ducimus laborum. Aut!</p>
+                            <p class="precio">200</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8aafc54b53.js" crossorigin="anonymous"></script>
+    <script src="loremStores.js"></script>
+</body>
+</html>
