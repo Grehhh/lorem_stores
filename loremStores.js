@@ -11,8 +11,8 @@ function addtoCart (name,price) {
     }
     arrProducts.push(product);
     total += price;    
-    textBox += `<p>${product.name}, precio = ${product.price}</p>`;
-    textTotal = `<p>Total = ${total}</p>`;
+    textBox += `<span>${product.name}</span> <span class="float-right">${product.price} €</span><br>`;
+    textTotal = `<p class="total">Total = ${total} €</p>`;
     cart.innerHTML = textBox + textTotal;
     alert('Producto añadido al carrito');
 }
