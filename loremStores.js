@@ -14,6 +14,7 @@ function addtoCart (name,price) {
     textBox += `<p>${product.name}, precio = ${product.price}</p>`;
     textTotal = `<p>Total = ${total}</p>`;
     cart.innerHTML = textBox + textTotal;
+    alert('Producto añadido al carrito');
 }
 
 function pay () {
